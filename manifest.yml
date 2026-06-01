@@ -1,0 +1,16 @@
+name: Geoboid
+version: 1.0.2
+authors:
+  - Leo Lu
+description: >
+  Grasshopper script utilising Reynold's Boid Theory to create a flocking system that interacts with
+  wind and solar data to create dynamic and responsive geometry, with solar-modulated volumisers via metaballs.
+url: ""
+icon: GeoboidIcon.png
+keywords:
+  - boids
+  - flocking
+  - sunlight
+  - metaball
+  - pointcloud
+  - simulation
