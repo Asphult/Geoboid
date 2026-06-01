@@ -160,9 +160,12 @@ Geoboid/
 │   ├── BoidsComponent.cs
 │   └── CurveMetaballerComponent.cs
 ├── scripts/
-│   └── boids_spatial_hash.cs      # script-component variant, spatial-hash optimised
-├── manifest.yml                   # Yak package manifest
-├── icon.png                       # package icon (24×24 component icons TBD)
+│   └── boids_spatial_hash.cs             # script-component variant, spatial-hash optimised
+├── sample_data/
+│   └── CFDdatapoints.csv                 
+│   └── DirectSunlightdatapoints.csv      
+├── manifest.yml                          # Yak package manifest
+├── GeoboidIcon.png                      
 ├── README.md
 └── LICENSE
 ```
