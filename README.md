@@ -78,7 +78,7 @@ Coats each curve in a string of overlapping spheres, blends them into one contin
 
 - **Inputs:** curves, sun points + values, sun search radius, radius, radius factor, blend, blend factor, voxel size, noise amp + scale, taper, smooth passes.
 - **Outputs:** `Mesh`, coloured debug sample cloud.
-- **Voxel Size is the main quality/speed knob** — smaller is finer but much slower and heavier.
+- **Voxel Size is the main quality/speed knob** smaller is finer but much slower and heavier.
 
 ---
 
@@ -103,7 +103,7 @@ Coats each curve in a string of overlapping spheres, blends them into one contin
 
 ## Building from source
 
-**Prerequisites:** the [.NET SDK](https://dotnet.microsoft.com/download), Rhino 8, and Visual Studio 2022 or VS Code. The `RhinoCommon` and `Grasshopper` libraries are pulled in as NuGet packages — no manual DLL references needed.
+**Prerequisites:** the [.NET SDK](https://dotnet.microsoft.com/download), Rhino 8, and Visual Studio 2022 or VS Code. The `RhinoCommon` and `Grasshopper` libraries are pulled in as NuGet packages  no manual DLL references needed.
 
 ```bash
 git clone https://github.com/<you>/Geoboid.git
@@ -118,7 +118,7 @@ dotnet new install Rhino.Templates
 dotnet new grasshopper --name Geoboid
 ```
 
-Then drop the four `.cs` files from `src/` into the generated project — each component self-registers via its `GH_Component` subclass, and the template's `GH_AssemblyInfo` class supplies the plugin metadata.
+Then drop the four `.cs` files from `src/` into the generated project, each component self-registers via its `GH_Component` subclass, and the template's `GH_AssemblyInfo` class supplies the plugin metadata.
 
 ---
 
@@ -127,7 +127,7 @@ Then drop the four `.cs` files from `src/` into the generated project — each c
 Distribution uses [Yak](https://developer.rhino3d.com/guides/yak/), Rhino's package manager. From a folder containing the built `.gha`, an `icon.png`, and any `misc/` docs:
 
 ```bash
-# locate yak — Windows: "C:\Program Files\Rhino 8\System\yak.exe"
+# locate yak Windows: "C:\Program Files\Rhino 8\System\yak.exe"
 #               macOS:   /Applications/Rhino 8.app/Contents/Resources/bin/yak
 
 yak spec          # generate manifest.yml from the .gha
@@ -137,7 +137,7 @@ yak login         # requires a Rhino Account
 yak push Geoboid-0.1.0-rh8-win.yak
 ```
 
-A starter `manifest.yml` lives in this repo. Note that package versions are immutable once pushed — bump the version for every release. Push to the test server first (`yak push --source <test-server-url>`) if you want a dry run.
+A starter `manifest.yml` lives in this repo. Please note that package versions are immutable once pushed, bump the version for every release. Push to the test server first (`yak push --source <test-server-url>`) if you want a dry run.
 
 ---
 
@@ -171,7 +171,7 @@ Geoboid/
 
 ## Contributing
 
-Issues and pull requests are welcome. A few conventions:
+Issues and pull requests are welcome, please note below:
 
 - Keep the simulation/geometry math in plain helper methods so it stays testable outside Rhino.
 - One component per file; give every new component a freshly generated `ComponentGuid` and never change it after release.
