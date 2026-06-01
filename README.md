@@ -7,7 +7,7 @@ A set of computational-design components for **Grasshopper** (Rhino 8), built ar
 ![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS-lightgrey.svg)
 ![.NET](https://img.shields.io/badge/.NET-7.0-512BD4.svg)
 
-![Sample Image]([results/exampleresult.png]
+![Sample Image](results/exampleresult.png)
 ---
 
 ## Contents
